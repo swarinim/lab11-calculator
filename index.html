@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>
+<!-- 
+    Written by:
+    Siddharth Ojha
+    201800509
+    Sem 5 Sec B
+
+    8th Nov 2020
+  -->
+<head>
+    <meta http-equiv="Content-Type" content="text/html;charset=UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Calculator (Siddharth Ojha 201800509)</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap" rel="stylesheet">
+    <style>
+body {
+    font-family: font-family:'Poppins', sans-serif;
+    font-size: 14px;
+}
+
+.fg {
+    max-width: 800px;
+    margin: auto;
+    background: #EFEFEF;
+    padding: 10px 10px 10px 10px;
+    border-radius: 9px;
+}
+
+.calc {
+    background-color: #E3E2DE;
+    padding: 10px 10px 10px 10px;
+    border-radius: 9px;
+    max-width: 200px;
+    margin: auto;
+}
+
+.calc-disp {
+    overflow-x: hidden;
+    padding: 5px 5px 5px 5px;
+    border:1px solid #998181;
+    border-radius: 9px;
+    min-height: 20px;
+    max-width: 100%;
+    background: #FFFEF3;
+    margin: 2px 2px 20px 2px;
+}
+
+.button {
+    min-width: 20px;
+    min-height: 20px;
+    border-radius: 9px;
+    text-align: center;
+    font-weight: bold;
+    padding: 5px 5px 5px 5px;
+    color: white;
+    background-color: #5ccc6e;
+    border: none;
+    width: 100%;
+}
+
+.button:hover {
+    background-color: #FF8D98;
+}
+
+.button:active {
+    background-color: #B9001D;
+}
+
+.res {
+    min-width: 30px;
+    min-height: 30px;
+    margin-bottom: 10px;
+    border-radius: 9px;
+    text-align: center;
+    font-weight: bold;
+    padding: 5px 5px 5px 5px;
+    color: white;
+    background-color: #535353;
+    border: 1px solid black;
+    width: 100%;
+    box-sizing: border-box;
+}
+</style>
+</head>
+<body>
+<div class="fg">
+<h1>Calculator</h1>
+<p>
+<strong>Enter numbers into the 2 boxes and click on an operator.</i>
+</p>
+<br />
+<form target="" method="post"> 
+<table class="calc" align="center">
+    <tr align="center">
+        <td colspan="4"><div class="res">{{RESULT}}</div></td>
+    </tr>
+    <tr>
+        <td colspan="2"><input type="text" name="val1" value="{{VALUE1}}" class="calc-disp"></input></td>
+        <td colspan="2"><input type="text" name="val2" value="{{VALUE2}}" class="calc-disp"></input></td>
+    </tr>
+    <tr class="pad">
+        <td><input type="submit" name="oper" value="+" class="button" /></td>
+        <td><input type="submit" name="oper" value="-" class="button" /></td>
+        <td><input type="submit" name="oper" value="*" class="button" /></td>
+        <td><input type="submit" name="oper" value="/" class="button" /></td>
+    </tr>
+</table>
+</form>
+</body>
+</html>
